@@ -5,6 +5,7 @@ import Props from './Component/Props';
 import State from './Component/State';
 import EventHandler from './Component/EventHandler';
 import ConditionalRending from './Component/ConditionalRendering';
+import ListRendering from './Component/ListRendering';
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
       {/* <EventHandler /> */}
 
       {/* conditional rendering */}
-      <ConditionalRending />
+      {/* <ConditionalRending /> */}
+
+      {/* list rendering */}
+      <ListRendering/>
     </div>
   );
 }
