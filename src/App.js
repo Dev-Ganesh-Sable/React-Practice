@@ -6,6 +6,7 @@ import State from './Component/State';
 import EventHandler from './Component/EventHandler';
 import ConditionalRending from './Component/ConditionalRendering';
 import ListRendering from './Component/ListRendering';
+import Style from './Component/style/Style';
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
       {/* <ConditionalRending /> */}
 
       {/* list rendering */}
-      <ListRendering/>
+      {/* <ListRendering/> */}
+
+      {/* css styling */}
+      <Style />
     </div>
   );
 }
