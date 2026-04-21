@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react'
 
- class RegComforPureCom extends Component {
+ class Unpure extends Component {
   render() {
     return (
-      <div>RegComforPureCom : {this.state.name}</div>
+      <div>UnPureCom : {this.state.name}</div>
     )
   }
 }
 
-export default RegComforPureCom
+export default Unpure

@@ -10,6 +10,7 @@ import Style from './Component/style/Style';
 import CompA from './Component/ComponentLifeCycle/CompA';
 import Fragment from './Component/Fragments/Fregment';
 import PureCom from './Component/Pure&UnpureComponent/PureCom';
+import ParentComforPureom from './Component/Pure&UnpureComponent/ParentComForPureComponent';
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
       {/* <Fragment /> */}
 
       {/* pure and unpure component */}
-      <PureCom/>      
+      <PureCom/> 
+      <ParentComforPureom/>     
 
     </div>
   );
