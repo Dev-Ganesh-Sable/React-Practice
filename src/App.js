@@ -7,6 +7,7 @@ import EventHandler from './Component/EventHandler';
 import ConditionalRending from './Component/ConditionalRendering';
 import ListRendering from './Component/ListRendering';
 import Style from './Component/style/Style';
+import CompA from './Component/ComponentLifeCycle/CompA';
 
 function App() {
   return (
@@ -27,7 +28,11 @@ function App() {
       {/* <ListRendering/> */}
 
       {/* css styling */}
-      <Style />
+      {/* <Style /> */}
+
+      {/* component life cycle */}
+      <CompA />
+
     </div>
   );
 }
