@@ -9,6 +9,7 @@ import ListRendering from './Component/ListRendering';
 import Style from './Component/style/Style';
 import CompA from './Component/ComponentLifeCycle/CompA';
 import Fragment from './Component/Fragments/Fregment';
+import PureCom from './Component/Pure&UnpureComponent/PureCom';
 
 function App() {
   return (
@@ -35,7 +36,10 @@ function App() {
       {/* <CompA /> */}
 
       {/* fragment */}
-      <Fragment />
+      {/* <Fragment /> */}
+
+      {/* pure and unpure component */}
+      <PureCom/>      
 
     </div>
   );
