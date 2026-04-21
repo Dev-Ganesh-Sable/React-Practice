@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react'
+import CompB from './CompB';
 
 export default class CompA extends Component {
     // first step of component life cycle
@@ -18,10 +19,13 @@ export default class CompA extends Component {
         return null
     }
     // third step component life cycle
-    
+
     render() {
         return (
-            <div>CompA</div>
+            <div>
+                <CompB />
+                <div>CompA</div>
+            </div>
         )
     }
 }
