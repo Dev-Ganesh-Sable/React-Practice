@@ -11,6 +11,8 @@ import CompA from './Component/ComponentLifeCycle/CompA';
 import Fragment from './Component/Fragments/Fregment';
 import PureCom from './Component/Pure&UnpureComponent/PureCom';
 import ParentComforPureom from './Component/Pure&UnpureComponent/ParentComForPureComponent';
+import RefClassCom from './Component/Ref/RefClassCom';
+import RefFuctionalCom from './Component/Ref/RefFuctionalCom';
 
 function App() {
   return (
@@ -40,8 +42,12 @@ function App() {
       {/* <Fragment /> */}
 
       {/* pure and unpure component */}
-      <PureCom/> 
-      <ParentComforPureom/>     
+      {/* <PureCom/> 
+      <ParentComforPureom/>      */}
+
+      {/* ref : reference */}
+      <RefClassCom />
+      <RefFuctionalCom />
 
     </div>
   );
