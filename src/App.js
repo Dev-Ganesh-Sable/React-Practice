@@ -13,6 +13,8 @@ import PureCom from './Component/Pure&UnpureComponent/PureCom';
 import ParentComforPureom from './Component/Pure&UnpureComponent/ParentComForPureComponent';
 import RefClassCom from './Component/Ref/RefClassCom';
 import RefFuctionalCom from './Component/Ref/RefFuctionalCom';
+import Get from './Component/HTTP-Request/Get';
+import Post from './Component/HTTP-Request/Post';
 
 function App() {
   return (
@@ -46,9 +48,12 @@ function App() {
       <ParentComforPureom/>      */}
 
       {/* ref : reference */}
-      <RefClassCom />
-      <RefFuctionalCom />
+      {/* <RefClassCom />
+      <RefFuctionalCom /> */}
 
+      {/* HTTP Request */}
+      <Get />
+      <Post />
     </div>
   );
 }
