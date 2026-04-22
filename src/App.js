@@ -16,6 +16,7 @@ import RefFuctionalCom from './Component/Ref/RefFuctionalCom';
 import Get from './Component/HTTP-Request/Get';
 import Post from './Component/HTTP-Request/Post';
 import LoginWithUseState from './Component/Hooks/UseState/LoginWithUseState';
+import DataFetchingUseEffect from './Component/Hooks/UseEffect/DataFetchingUseEffect';
 
 function App() {
   return (
@@ -58,7 +59,8 @@ function App() {
       {/* --------------------------------------------------------------------------------------------------- */}
 
       {/* Hooks */}
-      <LoginWithUseState />
+      {/* <LoginWithUseState /> */}
+      <DataFetchingUseEffect/>
 
     </div>
   );
