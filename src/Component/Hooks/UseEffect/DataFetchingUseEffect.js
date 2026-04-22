@@ -5,7 +5,7 @@ import axiox from 'axios'
 
 function DataFetchingUseEffect() {
 
-    const [post, setPost] = useState({});
+    const [post, setPost] = useState([]);
 
     const [id, setId] = useState(1);
 
