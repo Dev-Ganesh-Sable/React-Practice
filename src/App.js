@@ -19,13 +19,14 @@ import LoginWithUseState from './Component/Hooks/UseState/LoginWithUseState';
 import DataFetchingUseEffect from './Component/Hooks/UseEffect/DataFetchingUseEffect';
 import ComponentC from './Component/Hooks/ContextAPI/ComponentC';
 import React, { createContext } from 'react';
+import Reducer from './Component/Hooks/UseReducer/Reducer';
 
 // code for context API
 // step 01
-export const UserContext = React.createContext();
+// export const UserContext = React.createContext();
 
 // one more example
-export const ChannalContext = React.createContext();
+// export const ChannalContext = React.createContext();
 
 function App() {
   return (
@@ -73,14 +74,19 @@ function App() {
 
       {/* context API */}
       {/* step 02 */}
-      <UserContext.Provider value={"Ganesh"}>
+      {/* <UserContext.Provider value={"Ganesh"}>
         <ChannalContext value={"Code With Ganesh"}>
 
           <ComponentC />
 
         </ChannalContext>
 
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      {/* -------------------------------------------------------------------------- */}
+
+      {/* use reducer */}
+      <Reducer />
+
 
     </div>
   );
