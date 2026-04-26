@@ -18,16 +18,25 @@ import Post from './Component/HTTP-Request/Post';
 import LoginWithUseState from './Component/Hooks/UseState/LoginWithUseState';
 import DataFetchingUseEffect from './Component/Hooks/UseEffect/DataFetchingUseEffect';
 import ComponentC from './Component/Hooks/ContextAPI/ComponentC';
-import React, { createContext } from 'react';
 import Reducer from './Component/Hooks/UseReducer/Reducer';
 import RefHook from './Component/Hooks/UseRef/RefHook';
 
+
+// for lezy loading
+import React, { Suspense, lazy } from 'react';
+
+// / suspance : a built-in React component which lets you temporarily render a fallback UI while its children are still loading...
+
+const Home = lazy(() => import("../src/Component/Lezy-Loading/Home"));
+const About = lazy(() => import("../src/Component/Lezy-Loading/About"));
+
+
 // code for context API
 // step 01
-export const UserContext = React.createContext();
+// export const UserContext = React.createContext();
 
 // one more example
-export const ChannalContext = React.createContext();
+// export const ChannalContext = React.createContext();
 
 function App() {
   return (
@@ -75,21 +84,30 @@ function App() {
 
       {/* context API */}
       {/* step 02 */}
-      <UserContext.Provider value={"Ganesh"}>
+      {/* <UserContext.Provider value={"Ganesh"}>
         <ChannalContext value={"Code With Ganesh"}>
 
           <ComponentC />
 
         </ChannalContext>
 
-      </UserContext.Provider>
+      </UserContext.Provider> */}
       {/* -------------------------------------------------------------------------- */}
 
       {/* use reducer */}
       {/* <Reducer /> */}
 
       {/* use ref */}
-      <RefHook />
+      {/* <RefHook /> */}
+
+      {/* lezy loading */}
+      <Suspense fallback={<h4>Please Wait..... Loading Home Component</h4>}>
+        <Home />
+      </Suspense>
+
+      <Suspense fallback={<h4>Please Wait  ....... Loading About Component</h4>}>
+        <About/>
+      </Suspense>
 
 
     </div>

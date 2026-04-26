@@ -3,7 +3,7 @@ import { useReducer } from 'react'
 
 const initilasState = 0
 
-const reducer = (state, action) => {
+const reducer = (state, action) => {  // its take two parameters 1) state 2) action
     // step 2 
     switch (action) {
         case 'incerment':
@@ -21,7 +21,9 @@ const reducer = (state, action) => {
 function Reducer() {
 
     // step 01
-    const [count, dispatch] = useReducer(reducer, initilasState);
+    const [count, dispatch] = useReducer(reducer, initilasState);  // reducer function take to parameters 
+    // 1) reducer functon  
+    //  2) initails state
 
     return (
         <div>
